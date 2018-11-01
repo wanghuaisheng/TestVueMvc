@@ -48,7 +48,7 @@ namespace TestVueMvc
 
                 //Logger.Default.Error("Application_Error", lastError);
                 //Response.StatusCode = 500;
-                HttpContext.Current.Response.Redirect("~/Error500");
+                HttpContext.Current.Response.Redirect(@"~/error500");
                 Server.ClearError();
             }
         }

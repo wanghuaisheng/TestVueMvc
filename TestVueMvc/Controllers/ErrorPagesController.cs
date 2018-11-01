@@ -9,7 +9,7 @@ namespace TestVueMvc.Controllers
     public class ErrorPagesController : Controller
     {
         // GET: ErrorPages
-        public ActionResult Error500()
+        public ActionResult ServerError()
         {
             return View();
         }

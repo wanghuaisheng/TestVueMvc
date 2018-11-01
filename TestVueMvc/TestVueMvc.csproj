@@ -324,7 +324,7 @@
     <Content Include="static\tinymce4.7.5\skins\lightgray\fonts\tinymce.ttf" />
     <Content Include="static\tinymce4.7.5\skins\lightgray\fonts\tinymce.woff" />
     <Content Include="static\tinymce4.7.5\skins\lightgray\skin.min.css.map" />
-    <Content Include="Views\ErrorPages\Error500.cshtml" />
+    <Content Include="Views\ErrorPages\ServerError.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

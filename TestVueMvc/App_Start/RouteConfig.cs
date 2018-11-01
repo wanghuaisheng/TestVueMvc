@@ -15,8 +15,8 @@ namespace TestVueMvc
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapRoute(
                             name: "Error500",
-                            url: "Error500",
-                            defaults: new { controller = "ErrorPages", action = "Error500" }
+                            url: "error500",
+                            defaults: new { controller = "ErrorPages", action = "ServerError" }
                         );
             routes.MapRoute(
                 name: "Default",

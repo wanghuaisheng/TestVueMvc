@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace TestVueMvc.Controllers
@@ -10,7 +7,7 @@ namespace TestVueMvc.Controllers
     {
         public ActionResult Index()
         {
-            if (Request.RawUrl.Contains("/Home/")) return Redirect("/");
+            if (Request.RawUrl.ToLower().Contains("/home")) return Redirect("/");
             return View();
         }
 
@@ -25,7 +22,7 @@ namespace TestVueMvc.Controllers
         {
             ViewBag.Message = "Your contact page.";
             throw new ArgumentException("错误");
-            return View();
+            //return View();
         }
     }
 }
