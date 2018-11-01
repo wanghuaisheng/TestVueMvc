@@ -10,6 +10,7 @@ namespace TestVueMvc.Controllers
     {
         public ActionResult Index()
         {
+            if (Request.RawUrl.Contains("/Home/")) return Redirect("/");
             return View();
         }
 
